@@ -33,6 +33,7 @@ nav {
   align-items: center;
 
   height: 80px;
+  width: 100%;
   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
   padding: 0 10%;
   background-color: #fff;
@@ -182,7 +183,6 @@ main .scroll .scrollIcon span {
   nav {
     flex-direction: column;
     padding: 0;
-    max-width: 320px;
   }
 
   main {
