@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+body,
+a,
+button {
+  font-family: "Nunito", sans-serif;
+}
+
+a {
+  color: #242424;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color ease-in-out 0.3s;
+}
+
+a:hover {
+  color: #c95e20;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 80px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+  padding: 0 10%;
+  background-color: #fff;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  padding: 0 20px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100vw;
+}
+
+main:before {
+  content: " ";
+  width: 535px;
+  height: 600px;
+
+  position: absolute;
+  background-image: url("/assets/forma1.svg");
+  background-size: min(100%, 100%);
+  background-repeat: no-repeat;
+  left: -220px;
+  z-index: -1;
+}
+
+main:after {
+  content: " ";
+  width: 535px;
+  height: 600px;
+
+  position: absolute;
+  background-image: url("/assets/forma2.svg");
+  background-repeat: no-repeat;
+  background-size: min(100%, 100%);
+  right: -220px;
+  z-index: -1;
+}
+
+main .callToAction {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 50vw;
+  height: calc(100vh - 80px);
+}
+
+main .callToAction h1 {
+  max-width: 500px;
+}
+
+main .callToAction button {
+  padding: 10px 30px;
+  margin: 20px 0;
+  background-color: #fca60f;
+  color: #fff;
+  border: 0;
+  width: 280px;
+
+  font-weight: 700;
+  font-size: 22px;
+  transition: background ease-in-out 0.3s;
+  cursor: pointer;
+}
+
+main .callToAction button:hover {
+  background-color: #c95e20;
+}
+
+main .callToAction ul {
+  display: flex;
+
+  list-style: none;
+}
+
+main .callToAction ul li {
+  margin-right: 10px;
+}
+
+main .illustration {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  width: 50vw;
+  height: calc(100vh - 80px);
+}
+
+main .illustration img {
+  max-height: 500px;
+}
+
+main .scroll {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  bottom: 42px;
+}
+
+main .scroll .scrollIcon {
+  height: 28px;
+  width: 16px;
+  background-color: #fca60f;
+  border-radius: 8px;
+
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+main .scroll .scrollIcon:hover span {
+  transform: translateY(-14px);
+}
+
+main .scroll .scrollIcon span {
+  height: 4px;
+  width: 4px;
+  background-color: #fff;
+  border-radius: 2px;
+  position: absolute;
+  bottom: 6px;
+  transition: all ease-in-out 0.3s;
+}
+
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+  nav {
+    flex-direction: column;
+    padding: 0;
+    max-width: 320px;
+  }
+
+  main {
+    flex-direction: column;
+    height: calc(100vh - 80px);
+  }
+
+  main .callToAction {
+    width: 100vw;
+    justify-content: space-around;
+    align-content: space-around;
+  }
+
+  main:before {
+    height: 300px;
+    width: 260px;
+    background-size: min(100%, 100%);
+
+    left: -55px;
+    top: 90px;
+  }
+
+  main:after {
+    height: 150px;
+    width: 260px;
+    background-size: min(100%, 100%);
+    background-position-x: 150px;
+    right: 0;
+    bottom: 0;
+  }
+
+  main .callToAction .textInformation {
+    height: calc(100vh - 80px);
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  main .callToAction h1 {
+    max-width: 500px;
+  }
+
+  main .illustration {
+    display: none;
+  }
+
+  main .scroll {
+    display: none;
+  }
+}
