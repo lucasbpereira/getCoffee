@@ -112,6 +112,9 @@ main .callToAction button {
 main .callToAction button:hover {
   background-color: #c95e20;
 }
+main .callToAction button:hover a {
+  color: #fff;
+}
 
 main .callToAction ul {
   display: flex;
@@ -158,7 +161,7 @@ main .scroll .scrollIcon {
   align-items: flex-end;
 }
 
-main .scroll .scrollIcon:hover span {
+main .scroll:hover .scrollIcon span {
   transform: translateY(-14px);
 }
 
